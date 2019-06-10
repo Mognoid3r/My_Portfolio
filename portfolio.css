@@ -106,22 +106,61 @@ li a:hover {
     width: 50%;
 
 }
-.pix {
+
+.icons {
+    background-color: #2E4053;
+
+} 
+
+.box {
+    position: relative;
+    bottom: 10%;
+    left: 10%;
+    display: inline-block;
+    width: 120px;
+}
+
+.icon {
     background-color: #2E4053;
 }
 
-.pix a {
+.icon ion-icon {
+    color: #F1C40F;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
     background-color: #2E4053;
+
+}
+.icon span {
+    position: relative;
+    width: 120px;
+    background: #F1C40F;
+    color: #2E4053;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 0.6s opacity;
 }
 
-.pix img {
-    height:150px; 
-    width:150px;
-    margin: 2%;
+.icon span:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    background: #F1C40F;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
 }
 
-.pix img:hover {
-    opacity: .5;
+.icon:hover > span{
+    opacity: 1;
 }
 
 
